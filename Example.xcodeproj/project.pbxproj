@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		F1895F6427171999002841A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F6327171999002841A7 /* ContentView.swift */; };
 		F1895F662717199C002841A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1895F652717199C002841A7 /* Assets.xcassets */; };
 		F1895F692717199C002841A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1895F682717199C002841A7 /* Preview Assets.xcassets */; };
+		F1895F7227171BD3002841A7 /* Plani_DS in Frameworks */ = {isa = PBXBuildFile; productRef = F1895F7127171BD3002841A7 /* Plani_DS */; };
+		F1895F75271724DD002841A7 /* ComponentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F74271724DD002841A7 /* ComponentRow.swift */; };
+		F1895F7827185F08002841A7 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F7727185F08002841A7 /* Components.swift */; };
+		F1895F7A271861F6002841A7 /* ListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F79271861F6002841A7 /* ListHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,9 @@
 		F1895F652717199C002841A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1895F682717199C002841A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1895F6A2717199C002841A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1895F74271724DD002841A7 /* ComponentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRow.swift; sourceTree = "<group>"; };
+		F1895F7727185F08002841A7 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		F1895F79271861F6002841A7 /* ListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1895F7227171BD3002841A7 /* Plani_DS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +46,7 @@
 			children = (
 				F1895F6027171999002841A7 /* Example */,
 				F1895F5F27171999002841A7 /* Products */,
+				F1895F7027171BD3002841A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +61,8 @@
 		F1895F6027171999002841A7 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				F1895F7627185EF8002841A7 /* Model */,
+				F1895F73271724C5002841A7 /* View */,
 				F1895F6127171999002841A7 /* ExampleApp.swift */,
 				F1895F6327171999002841A7 /* ContentView.swift */,
 				F1895F652717199C002841A7 /* Assets.xcassets */,
@@ -67,6 +78,30 @@
 				F1895F682717199C002841A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1895F7027171BD3002841A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1895F73271724C5002841A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1895F74271724DD002841A7 /* ComponentRow.swift */,
+				F1895F79271861F6002841A7 /* ListHeader.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1895F7627185EF8002841A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1895F7727185F08002841A7 /* Components.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +120,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				F1895F7127171BD3002841A7 /* Plani_DS */,
+			);
 			productName = Example;
 			productReference = F1895F5E27171999002841A7 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -139,7 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1895F6427171999002841A7 /* ContentView.swift in Sources */,
+				F1895F7827185F08002841A7 /* Components.swift in Sources */,
 				F1895F6227171999002841A7 /* ExampleApp.swift in Sources */,
+				F1895F7A271861F6002841A7 /* ListHeader.swift in Sources */,
+				F1895F75271724DD002841A7 /* ComponentRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +369,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1895F7127171BD3002841A7 /* Plani_DS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Plani_DS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1895F5627171999002841A7 /* Project object */;
 }

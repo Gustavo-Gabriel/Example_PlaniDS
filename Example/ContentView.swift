@@ -1,21 +1,45 @@
-//
-//  ContentView.swift
-//  Example
-//
-//  Created by Gustavo Anjos on 13/10/21.
-//
-
 import SwiftUI
+import Plani_DS
 
-struct ContentView: View {
+struct ComponentsView: View {
+    
+    let tokens = [Component(title: "Cores", detailView: AnyView(EmptyView())),
+                  Component(title: "Tipografia", detailView: AnyView(EmptyView())),
+                  Component(title: "Espaçamento", detailView: AnyView(EmptyView()))
+    ]
+
+    let components = [Component(title: "Buttons", detailView: AnyView(EmptyView())),
+                      Component(title: "Swicth", detailView: AnyView(EmptyView())),
+                      Component(title: "Segment Control", detailView: AnyView(EmptyView()))
+    ]
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                Section(header: ListHeader(title: "Tokens")) {
+                    ForEach(tokens) { token in
+                        NavigationLink(destination: token.detailView) {
+                            ComponentRow(component: token)
+                        }
+                    }
+                }
+
+                Section(header: ListHeader(title: "Componentes")) {
+                    ForEach(components) { component in
+                        NavigationLink(destination: component.detailView) {
+                            ComponentRow(component: component)
+                        }
+                    }
+                }
+            }.listStyle(GroupedListStyle())
+
+            .navigationBarTitle("Plani DS")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ComponentsView()
     }
 }
