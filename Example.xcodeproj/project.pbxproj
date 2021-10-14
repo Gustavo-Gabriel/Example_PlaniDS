@@ -15,6 +15,7 @@
 		F1895F75271724DD002841A7 /* ComponentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F74271724DD002841A7 /* ComponentRow.swift */; };
 		F1895F7827185F08002841A7 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F7727185F08002841A7 /* Components.swift */; };
 		F1895F7A271861F6002841A7 /* ListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F79271861F6002841A7 /* ListHeader.swift */; };
+		F1895F8227187007002841A7 /* SpacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F8127187007002841A7 /* SpacingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F1895F74271724DD002841A7 /* ComponentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRow.swift; sourceTree = "<group>"; };
 		F1895F7727185F08002841A7 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		F1895F79271861F6002841A7 /* ListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeader.swift; sourceTree = "<group>"; };
+		F1895F8127187007002841A7 /* SpacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		F1895F73271724C5002841A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F1895F8027186D7F002841A7 /* Tokens */,
 				F1895F74271724DD002841A7 /* ComponentRow.swift */,
 				F1895F79271861F6002841A7 /* ListHeader.swift */,
 			);
@@ -102,6 +105,14 @@
 				F1895F7727185F08002841A7 /* Components.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F1895F8027186D7F002841A7 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				F1895F8127187007002841A7 /* SpacingView.swift */,
+			);
+			path = Tokens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			files = (
 				F1895F6427171999002841A7 /* ContentView.swift in Sources */,
 				F1895F7827185F08002841A7 /* Components.swift in Sources */,
+				F1895F8227187007002841A7 /* SpacingView.swift in Sources */,
 				F1895F6227171999002841A7 /* ExampleApp.swift in Sources */,
 				F1895F7A271861F6002841A7 /* ListHeader.swift in Sources */,
 				F1895F75271724DD002841A7 /* ComponentRow.swift in Sources */,
