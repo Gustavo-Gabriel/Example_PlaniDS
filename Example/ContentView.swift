@@ -3,7 +3,9 @@ import Plani_DS
 
 struct ComponentsView: View {
     
-    let tokens = [Component(title: "Spacing", detailView: AnyView(SpacingView()))]
+    let tokens = [Component(title: "Spacing", detailView: AnyView(SpacingView())),
+                  Component(title: "Radius", detailView: AnyView(RadiusView()))
+    ]
 
     var body: some View {
         NavigationView {
