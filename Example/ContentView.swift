@@ -2,9 +2,9 @@ import SwiftUI
 import Plani_DS
 
 struct ComponentsView: View {
-    
-    let tokens = [Component(title: "Spacing", detailView: AnyView(SpacingView())),
-                  Component(title: "Radius", detailView: AnyView(RadiusView()))
+    let tokens = [
+        Component(title: "Spacing", detailView: AnyView(SpacingView())),
+        Component(title: "Colors", detailView: AnyView(ColorsView()))
     ]
 
     var body: some View {
