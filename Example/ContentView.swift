@@ -2,13 +2,19 @@ import SwiftUI
 import Plani_DS
 
 struct ComponentsView: View {
+
     let tokens = [
         Component(title: "Spacing", detailView: AnyView(SpacingView())),
-        Component(title: "Colors", detailView: AnyView(ColorsView())),
-        Component(title: "Overlay", detailView: AnyView(OverlayDefault(title: "Lorem ipsum dolor sit amet", icon: "teste"))),
-        Component(title: "Overlay", detailView: AnyView(OverlayWarning(title: "Title", subtitle: "Lorem ipsum dolor sit amet lorem ipsum", icon: "teste"))),
-        Component(title: "Test", detailView: Overlay.getView(type: .defaultOverlay("Lorem ipsum dolor sit amet", "teste")))
+        Component(title: "Colors", detailView: AnyView(ColorsView()))
     ]
+
+    let overlays = [Component(title: "Overlay Default",
+                              detailView: Overlay.getView(
+                                type: .defaultOverlay("Lorem ipsum dolor sit amet lorem ipsum akdknddmal", "teste"))),
+
+                    Component(title: "Overlay Warning",
+                              detailView: Overlay.getView(
+                                type: .warning("Title", "Lorem ipsum dolor sit amet lorem ipsum", "teste")))]
 
     var body: some View {
         NavigationView {
@@ -17,6 +23,14 @@ struct ComponentsView: View {
                     ForEach(tokens) { token in
                         NavigationLink(destination: token.detailView) {
                             ComponentRow(component: token)
+                        }
+                    }
+                }
+                
+                Section(header: ListHeader(title: "Overlays")) {
+                    ForEach(overlays) { overlay in
+                        NavigationLink(destination: overlay.detailView) {
+                            ComponentRow(component: overlay)
                         }
                     }
                 }
