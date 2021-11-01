@@ -6,7 +6,8 @@ struct ComponentsView: View {
         Component(title: "Spacing", detailView: AnyView(SpacingView())),
         Component(title: "Colors", detailView: AnyView(ColorsView())),
         Component(title: "Overlay", detailView: AnyView(OverlayDefault(title: "Lorem ipsum dolor sit amet", icon: "teste"))),
-        Component(title: "Overlay", detailView: AnyView(OverlayWarning(title: "Title", subtitle: "Lorem ipsum dolor sit amet lorem ipsum", icon: "teste")))
+        Component(title: "Overlay", detailView: AnyView(OverlayWarning(title: "Title", subtitle: "Lorem ipsum dolor sit amet lorem ipsum", icon: "teste"))),
+        Component(title: "Test", detailView: Overlay.getView(type: .defaultOverlay("Lorem ipsum dolor sit amet", "teste")))
     ]
 
     var body: some View {
