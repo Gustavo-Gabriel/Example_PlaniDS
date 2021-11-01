@@ -5,7 +5,8 @@ struct ComponentsView: View {
     let tokens = [
         Component(title: "Spacing", detailView: AnyView(SpacingView())),
         Component(title: "Colors", detailView: AnyView(ColorsView())),
-        Component(title: "Overlay", detailView: AnyView(OverlayDefault(title: "Lorem ipsum dolor sit amet", icon: "teste")))
+        Component(title: "Overlay", detailView: AnyView(OverlayDefault(title: "Lorem ipsum dolor sit amet", icon: "teste"))),
+        Component(title: "Overlay", detailView: AnyView(OverlayWarning(title: "Title", subtitle: "Lorem ipsum dolor sit amet lorem ipsum", icon: "teste")))
     ]
 
     var body: some View {
