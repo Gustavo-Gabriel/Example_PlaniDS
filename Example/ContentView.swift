@@ -4,7 +4,8 @@ import Plani_DS
 struct ComponentsView: View {
     let tokens = [
         Component(title: "Spacing", detailView: AnyView(SpacingView())),
-        Component(title: "Colors", detailView: AnyView(ColorsView()))
+        Component(title: "Colors", detailView: AnyView(ColorsView())),
+        Component(title: "Overlay", detailView: AnyView(OverlayDefault(title: "Lorem ipsum dolor sit amet", icon: "teste")))
     ]
 
     var body: some View {
