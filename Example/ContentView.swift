@@ -8,13 +8,15 @@ struct ComponentsView: View {
         Component(title: "Colors", detailView: AnyView(ColorsView()))
     ]
 
-    let overlays = [Component(title: "Overlay Default",
-                              detailView: Overlay.getView(
-                                type: .defaultOverlay("Lorem ipsum dolor sit amet lorem ipsum akdknddmal", "teste"))),
+    let overlays = [
+        Component(title: "Overlay Default",
+                  detailView: Overlay.getView(
+                    type: .defaultOverlay("Lorem ipsum dolor sit amet lorem ipsum akdknddmal", "teste"))),
 
-                    Component(title: "Overlay Warning",
-                              detailView: Overlay.getView(
-                                type: .warning("Title", "Lorem ipsum dolor sit amet lorem ipsum", "teste")))]
+        Component(title: "Overlay Warning",
+                  detailView: Overlay.getView(
+                    type: .warning("Title", "Lorem ipsum dolor sit amet lorem ipsum", "teste")))
+    ]
 
     var body: some View {
         NavigationView {
