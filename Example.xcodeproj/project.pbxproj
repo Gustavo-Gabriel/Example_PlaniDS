@@ -13,6 +13,8 @@
 		F138604A271EF6FB00C8E096 /* RadiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1386049271EF6FB00C8E096 /* RadiusView.swift */; };
 		F138607A2731F91500C8E096 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13860792731F91500C8E096 /* Sections.swift */; };
 		F138607D2731F9BB00C8E096 /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138607C2731F9BB00C8E096 /* SectionType.swift */; };
+		F138607F2732020000C8E096 /* TokensSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138607E2732020000C8E096 /* TokensSection.swift */; };
+		F13860812732023E00C8E096 /* OverlaysSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13860802732023E00C8E096 /* OverlaysSection.swift */; };
 		F1895F6227171999002841A7 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F6127171999002841A7 /* ExampleApp.swift */; };
 		F1895F6427171999002841A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F6327171999002841A7 /* ContentView.swift */; };
 		F1895F662717199C002841A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1895F652717199C002841A7 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		F1386049271EF6FB00C8E096 /* RadiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusView.swift; sourceTree = "<group>"; };
 		F13860792731F91500C8E096 /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		F138607C2731F9BB00C8E096 /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
+		F138607E2732020000C8E096 /* TokensSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensSection.swift; sourceTree = "<group>"; };
+		F13860802732023E00C8E096 /* OverlaysSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaysSection.swift; sourceTree = "<group>"; };
 		F1895F5E27171999002841A7 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1895F6127171999002841A7 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		F1895F6327171999002841A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				F138607C2731F9BB00C8E096 /* SectionType.swift */,
+				F138607E2732020000C8E096 /* TokensSection.swift */,
+				F13860802732023E00C8E096 /* OverlaysSection.swift */,
+				F13860792731F91500C8E096 /* Sections.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -125,7 +132,6 @@
 			children = (
 				F1895F7727185F08002841A7 /* Components.swift */,
 				5E064EBC2728538900508B96 /* ColorsModel.swift */,
-				F13860792731F91500C8E096 /* Sections.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,12 +227,14 @@
 				F1895F7827185F08002841A7 /* Components.swift in Sources */,
 				F138607D2731F9BB00C8E096 /* SectionType.swift in Sources */,
 				F1895F8227187007002841A7 /* SpacingView.swift in Sources */,
+				F13860812732023E00C8E096 /* OverlaysSection.swift in Sources */,
 				F1895F6227171999002841A7 /* ExampleApp.swift in Sources */,
 				F138607A2731F91500C8E096 /* Sections.swift in Sources */,
 				F1895F7A271861F6002841A7 /* ListHeader.swift in Sources */,
 				5E064EBD2728538900508B96 /* ColorsModel.swift in Sources */,
 				5E42059E2720F90300D7BCEF /* ColorsView.swift in Sources */,
 				F1895F75271724DD002841A7 /* ComponentRow.swift in Sources */,
+				F138607F2732020000C8E096 /* TokensSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

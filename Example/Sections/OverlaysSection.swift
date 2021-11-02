@@ -1,17 +1,6 @@
-import SwiftUI
 import Plani_DS
 
-class Tokens: SectionType {
-    override init() {
-        super.init()
-    
-        self.title = "Tokens"
-        self.components = [Component(title: "Spacing", detailView: AnyView(SpacingView())),
-                           Component(title: "Colors", detailView: AnyView(ColorsView()))]
-    }
-}
-
-class Overlays: SectionType {
+class OverlaysSection: SectionType {
     override init() {
         super.init()
 
@@ -27,11 +16,5 @@ class Overlays: SectionType {
                                        subtitle: "Lorem ipsum dolor sit amet lorem ipsum",
                                        icon: "teste")))
         ]
-    }
-}
-
-class Sections {
-    func allSections() -> [SectionType] {
-        return [Tokens(), Overlays()]
     }
 }
