@@ -11,11 +11,14 @@ struct ComponentsView: View {
     let overlays = [
         Component(title: "Overlay Default",
                   detailView: Overlay.getView(
-                    type: .defaultOverlay("Lorem ipsum dolor sit amet lorem ipsum akdknddmal", "teste"))),
+                    type: .defaultOverlay(title: "Lorem ipsum dolor sit amet lorem ipsum akdknddmal",
+                                          icon: "teste"))),
 
         Component(title: "Overlay Warning",
                   detailView: Overlay.getView(
-                    type: .warning("Title", "Lorem ipsum dolor sit amet lorem ipsum", "teste")))
+                    type: .warning(title: "Title",
+                                   subtitle: "Lorem ipsum dolor sit amet lorem ipsum",
+                                   icon: "teste")))
     ]
 
     var body: some View {
