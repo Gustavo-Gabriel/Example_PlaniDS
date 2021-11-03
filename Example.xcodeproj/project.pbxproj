@@ -17,6 +17,8 @@
 		F13860812732023E00C8E096 /* OverlaysSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13860802732023E00C8E096 /* OverlaysSection.swift */; };
 		F1386085273206C300C8E096 /* ButtonsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1386084273206C200C8E096 /* ButtonsSection.swift */; };
 		F1386088273208C500C8E096 /* ButtonPrimaryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1386087273208C500C8E096 /* ButtonPrimaryExample.swift */; };
+		F138608A2732BDAD00C8E096 /* ButtonSecondaryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13860892732BDAD00C8E096 /* ButtonSecondaryExample.swift */; };
+		F138608C2732C65200C8E096 /* ButtonTerciaryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138608B2732C65200C8E096 /* ButtonTerciaryExample.swift */; };
 		F1895F6227171999002841A7 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F6127171999002841A7 /* ExampleApp.swift */; };
 		F1895F6427171999002841A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1895F6327171999002841A7 /* ContentView.swift */; };
 		F1895F662717199C002841A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1895F652717199C002841A7 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		F13860802732023E00C8E096 /* OverlaysSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaysSection.swift; sourceTree = "<group>"; };
 		F1386084273206C200C8E096 /* ButtonsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsSection.swift; sourceTree = "<group>"; };
 		F1386087273208C500C8E096 /* ButtonPrimaryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPrimaryExample.swift; sourceTree = "<group>"; };
+		F13860892732BDAD00C8E096 /* ButtonSecondaryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSecondaryExample.swift; sourceTree = "<group>"; };
+		F138608B2732C65200C8E096 /* ButtonTerciaryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTerciaryExample.swift; sourceTree = "<group>"; };
 		F1895F5E27171999002841A7 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1895F6127171999002841A7 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		F1895F6327171999002841A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				F1386087273208C500C8E096 /* ButtonPrimaryExample.swift */,
+				F13860892732BDAD00C8E096 /* ButtonSecondaryExample.swift */,
+				F138608B2732C65200C8E096 /* ButtonTerciaryExample.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -241,8 +247,10 @@
 				F1895F7827185F08002841A7 /* Components.swift in Sources */,
 				F138607D2731F9BB00C8E096 /* SectionType.swift in Sources */,
 				F1895F8227187007002841A7 /* SpacingView.swift in Sources */,
+				F138608C2732C65200C8E096 /* ButtonTerciaryExample.swift in Sources */,
 				F13860812732023E00C8E096 /* OverlaysSection.swift in Sources */,
 				F1386088273208C500C8E096 /* ButtonPrimaryExample.swift in Sources */,
+				F138608A2732BDAD00C8E096 /* ButtonSecondaryExample.swift in Sources */,
 				F1895F6227171999002841A7 /* ExampleApp.swift in Sources */,
 				F138607A2731F91500C8E096 /* Sections.swift in Sources */,
 				F1895F7A271861F6002841A7 /* ListHeader.swift in Sources */,

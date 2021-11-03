@@ -6,7 +6,9 @@ class TokensSection: SectionType {
         super.init()
     
         self.title = "Tokens"
-        self.components = [Component(title: "Spacing", detailView: AnyView(SpacingView())),
-                           Component(title: "Colors", detailView: AnyView(ColorsView()))]
+        self.components = [Component(title: "Colors", detailView: AnyView(ColorsView())),
+                           Component(title: "Radius", detailView: AnyView(RadiusView())),
+                           Component(title: "Spacing", detailView: AnyView(SpacingView()))
+                           ]
     }
 }
