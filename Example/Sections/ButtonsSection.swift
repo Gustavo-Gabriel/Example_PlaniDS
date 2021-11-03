@@ -7,7 +7,13 @@ class ButtonsSection: SectionType {
 
         self.title = "Buttons"
         self.components = [Component(title: "Button Primary",
-                                     detailView: AnyView(ButtonPrimaryExample()))
+                                     detailView: AnyView(ButtonPrimaryExample())),
+
+                           Component(title: "Button Secondary",
+                                     detailView: AnyView(ButtonSecondaryExample())),
+
+                           Component(title: "Button Terciary",
+                                     detailView: AnyView(ButtonTerciaryExample()))
         ]
     }
 }

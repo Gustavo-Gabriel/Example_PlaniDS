@@ -1,21 +1,22 @@
 import SwiftUI
 import Plani_DS
 
-struct ButtonPrimaryExample: View {
+struct ButtonSecondaryExample: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                ButtonPrimary(title: "Action")
+                ButtonSecondary(title: "Action")
                     .padding(.horizontal, Spacing.small)
 
-                ButtonPrimary(title: "Action", icon: "person")
+                ButtonSecondary(title: "Action", icon: "person")
                     .padding(.horizontal, Spacing.small)
+                
             }
         }
     }
 }
 
-struct ButtonPrimaryExample_Previews: PreviewProvider {
+struct ButtonSecondaryExample_Previews: PreviewProvider {
     static var previews: some View {
         ButtonPrimaryExample()
     }
